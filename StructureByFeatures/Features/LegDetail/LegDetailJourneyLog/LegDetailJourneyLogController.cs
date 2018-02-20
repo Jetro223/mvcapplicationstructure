@@ -6,7 +6,7 @@ namespace StructureByFeatures.Features.LegDetailJourneyLog
     {
         public ActionResult LegDetailJourneyLog()
         {
-            return View();
+            return View("LegDetailJourneyLog");
         }
     }
 }

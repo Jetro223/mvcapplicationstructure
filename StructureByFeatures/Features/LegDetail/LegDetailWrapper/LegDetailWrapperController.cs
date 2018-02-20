@@ -7,7 +7,7 @@ namespace StructureByFeatures.Features.LegDetailWrapper
         // GET: LegDetail/LegDetail
         public ActionResult Index()
         {
-            return View("Index");
+            return View();
         }
     }
 }

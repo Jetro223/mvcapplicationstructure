@@ -148,6 +148,7 @@
     <Compile Include="Areas\LegDetail\Controllers\LegDetailJourneyLogController.cs" />
     <Compile Include="Areas\LegDetail\Controllers\LegDetailWrapperController.cs" />
     <Compile Include="Areas\LegDetail\LegDetailAreaRegistration.cs" />
+    <Compile Include="Areas\Test\TestAreaRegistration.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -176,6 +177,7 @@
     <Content Include="Areas\Country\Views\web.config" />
     <Content Include="Areas\Country\Views\CountryWrapper\Index.cshtml" />
     <Content Include="Areas\LegDetail\Views\LegDetailMessages\_MessageModal.cshtml" />
+    <Content Include="Areas\Test\Views\web.config" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -208,6 +210,9 @@
     <Folder Include="Areas\Country\Views\Shared\" />
     <Folder Include="Areas\LegDetail\Models\" />
     <Folder Include="Areas\LegDetail\Views\Shared\" />
+    <Folder Include="Areas\Test\Controllers\" />
+    <Folder Include="Areas\Test\Models\" />
+    <Folder Include="Areas\Test\Views\Shared\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>

@@ -142,9 +142,9 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Features\LegDetailJourneyLog\LegDetailJourneyLogController.cs" />
-    <Compile Include="Features\LegDetailMessages\LegDetailMessagesController.cs" />
-    <Compile Include="Features\LegDetailWrapper\LegDetailWrapperController.cs" />
+    <Compile Include="Features\LegDetail\LegDetailJourneyLog\LegDetailJourneyLogController.cs" />
+    <Compile Include="Features\LegDetail\LegDetailMessages\LegDetailMessagesController.cs" />
+    <Compile Include="Features\LegDetail\LegDetailWrapper\LegDetailWrapperController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -155,9 +155,9 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="favicon.ico" />
-    <Content Include="Features\LegDetailJourneyLog\legDetailJourneyLogModule.js" />
-    <Content Include="Features\LegDetailMessages\legDetailMessagesModule.js" />
-    <Content Include="Features\LegDetailWrapper\legDetailWrapperModule.js" />
+    <Content Include="Features\LegDetail\LegDetailJourneyLog\legDetailJourneyLogModule.js" />
+    <Content Include="Features\LegDetail\LegDetailMessages\legDetailMessagesModule.js" />
+    <Content Include="Features\LegDetail\LegDetailWrapper\legDetailWrapperModule.js" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
@@ -166,11 +166,12 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Features\LegDetailWrapper\Index.cshtml" />
-    <Content Include="Features\LegDetailJourneyLog\LegDetailJourneyLog.cshtml" />
-    <Content Include="Features\LegDetailMessages\LegDetailMessages.cshtml" />
-    <Content Include="Features\LegDetailMessages\_MessageModal.cshtml" />
+    <Content Include="Features\LegDetail\LegDetailWrapper\Index.cshtml" />
+    <Content Include="Features\LegDetail\LegDetailJourneyLog\LegDetailJourneyLog.cshtml" />
+    <Content Include="Features\LegDetail\LegDetailMessages\LegDetailMessages.cshtml" />
+    <Content Include="Features\LegDetail\LegDetailMessages\_MessageModal.cshtml" />
     <Content Include="Features\Web.config" />
+    <Content Include="Features\_ViewStart.cshtml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
