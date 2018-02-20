@@ -1,0 +1,32 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>LegDetail Area</title>
+</head>
+<body>
+    <div>
+        <h1>Leg Detail Area</h1>
+
+        <a href="#" data-command="loadTab" data-url="@Url.Action("LegDetailJourneyLog", "LegDetailJourneyLog")"> JourneyLog Tab</a>
+        <a href="#" data-command="loadTab" data-url="@Url.Action("LegDetailMessages", "LegDetailMessages")"> Messages Tab</a>
+    </div>
+
+    <div class="" id="tabContent">
+
+    </div>
+
+</body>
+</html>
+
+@section scripts
+{
+
+    <script src="~/Areas/LegDetail/Scripts/legDetailWrapperModule.js"></script>
+}

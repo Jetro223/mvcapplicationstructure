@@ -9,12 +9,12 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{B22AEFFA-CD67-473A-B2FB-F5F9EAFA9B7D}</ProjectGuid>
+    <ProjectGuid>{D0CAD406-8C52-4448-8048-1C5055AF9AF2}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>StructureByAreas</RootNamespace>
-    <AssemblyName>StructureByAreas</AssemblyName>
+    <RootNamespace>StructureByFeatures</RootNamespace>
+    <AssemblyName>StructureByFeatures</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>true</UseIISExpress>
@@ -142,25 +142,22 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Areas\Country\Controllers\CountryWrapperController.cs" />
-    <Compile Include="Areas\Country\CountryAreaRegistration.cs" />
-    <Compile Include="Areas\LegDetail\Controllers\LegDetailMessagesController.cs" />
-    <Compile Include="Areas\LegDetail\Controllers\LegDetailJourneyLogController.cs" />
-    <Compile Include="Areas\LegDetail\Controllers\LegDetailWrapperController.cs" />
-    <Compile Include="Areas\LegDetail\LegDetailAreaRegistration.cs" />
-    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Features\LegDetailJourneyLog\LegDetailJourneyLogController.cs" />
+    <Compile Include="Features\LegDetailMessages\LegDetailMessagesController.cs" />
+    <Compile Include="Features\LegDetailWrapper\LegDetailWrapperController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Infrastructure\FeatureFoldersRazorViewEngine.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Areas\LegDetail\Scripts\legDetailMessagesModule.js" />
-    <Content Include="Areas\LegDetail\Scripts\legDetailWrapperModule.js" />
-    <Content Include="Areas\LegDetail\Scripts\legDetailJourneyLogModule.js" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="favicon.ico" />
+    <Content Include="Features\LegDetailJourneyLog\legDetailJourneyLogModule.js" />
+    <Content Include="Features\LegDetailMessages\legDetailMessagesModule.js" />
+    <Content Include="Features\LegDetailWrapper\legDetailWrapperModule.js" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
@@ -169,13 +166,11 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Areas\LegDetail\Views\web.config" />
-    <Content Include="Areas\LegDetail\Views\LegDetailWrapper\Index.cshtml" />
-    <Content Include="Areas\LegDetail\Views\LegDetailJourneyLog\LegDetailJourneyLog.cshtml" />
-    <Content Include="Areas\LegDetail\Views\LegDetailMessages\LegDetailMessages.cshtml" />
-    <Content Include="Areas\Country\Views\web.config" />
-    <Content Include="Areas\Country\Views\CountryWrapper\Index.cshtml" />
-    <Content Include="Areas\LegDetail\Views\LegDetailMessages\_MessageModal.cshtml" />
+    <Content Include="Features\LegDetailWrapper\Index.cshtml" />
+    <Content Include="Features\LegDetailJourneyLog\LegDetailJourneyLog.cshtml" />
+    <Content Include="Features\LegDetailMessages\LegDetailMessages.cshtml" />
+    <Content Include="Features\LegDetailMessages\_MessageModal.cshtml" />
+    <Content Include="Features\Web.config" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -198,16 +193,9 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
-    <Content Include="Views\Home\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Areas\Country\Models\" />
-    <Folder Include="Areas\Country\Views\Shared\" />
-    <Folder Include="Areas\LegDetail\Models\" />
-    <Folder Include="Areas\LegDetail\Views\Shared\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
@@ -239,9 +227,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>50055</DevelopmentServerPort>
+          <DevelopmentServerPort>51571</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:50055/</IISUrl>
+          <IISUrl>http://localhost:51571/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
