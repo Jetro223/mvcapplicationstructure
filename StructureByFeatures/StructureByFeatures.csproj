@@ -157,6 +157,18 @@
     <Content Include="favicon.ico" />
     <Content Include="Features\LegDetail\LegDetailJourneyLog\legDetailJourneyLogModule.js" />
     <Content Include="Features\LegDetail\LegDetailMessages\legDetailMessagesModule.js" />
+    <Content Include="Features\LegDetail\LegDetailWrapper\legdetailWrapper.css">
+      <DependentUpon>legdetailWrapper.less</DependentUpon>
+    </Content>
+    <Content Include="Features\LegDetail\LegDetailWrapper\legdetailWrapper.min.css">
+      <DependentUpon>legdetailWrapper.css</DependentUpon>
+    </Content>
+    <Content Include="Features\LegDetail\LegDetailWrapper\legDetailWrapper2.css">
+      <DependentUpon>legDetailWrapper2.scss</DependentUpon>
+    </Content>
+    <Content Include="Features\LegDetail\LegDetailWrapper\legDetailWrapper2.min.css">
+      <DependentUpon>legDetailWrapper2.css</DependentUpon>
+    </Content>
     <Content Include="Features\LegDetail\LegDetailWrapper\test.jpg" />
     <Content Include="Features\LegDetail\LegDetailWrapper\legDetailWrapperModule.js" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -173,6 +185,12 @@
     <Content Include="Features\LegDetail\LegDetailMessages\_MessageModal.cshtml" />
     <Content Include="Features\Web.config" />
     <Content Include="Features\_ViewStart.cshtml" />
+    <Content Include="Features\LegDetail\LegDetailWrapper\legdetailWrapper.less" />
+    <None Include="compilerconfig.json" />
+    <None Include="compilerconfig.json.defaults">
+      <DependentUpon>compilerconfig.json</DependentUpon>
+    </None>
+    <Content Include="Features\LegDetail\LegDetailWrapper\legDetailWrapper2.scss" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />

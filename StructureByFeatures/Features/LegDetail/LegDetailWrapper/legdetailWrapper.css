@@ -1,0 +1,7 @@
+﻿.wrapper {
+  color: red; }
+  .wrapper .item .icon {
+    font-size: 16px; }
+  .wrapper .item .description {
+    color: #ebebeb; }
+

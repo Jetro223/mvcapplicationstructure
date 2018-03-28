@@ -1,0 +1,14 @@
+﻿[
+  {
+    "outputFile": "Features/LegDetail/LegDetailWrapper/legdetailWrapper.css",
+    "inputFile": "Features/LegDetail/LegDetailWrapper/legdetailWrapper.less"
+  },
+  {
+    "outputFile": "Features/LegDetail/LegDetailWrapper/legDetailWrapper.css",
+    "inputFile": "Features/LegDetail/LegDetailWrapper/legDetailWrapper.scss"
+  },
+  {
+    "outputFile": "Features/LegDetail/LegDetailWrapper/legDetailWrapper2.css",
+    "inputFile": "Features/LegDetail/LegDetailWrapper/legDetailWrapper2.scss"
+  }
+]
